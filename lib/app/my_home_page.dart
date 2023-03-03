@@ -31,12 +31,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],)
                 ],
               ),),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               Row(
                 children: [
                   Container(
                     margin: const EdgeInsets.only(left: 20),
-                    child: Text("Popular Books",style: TextStyle(fontSize: 30),),
+                    child: const Text("Popular Books",style: TextStyle(fontSize: 30),),
                   )
                 ],
               ),
