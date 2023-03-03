@@ -40,14 +40,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                 ],
               ),
-              Container(
+              SizedBox(
                 height: 180,
                 child: PageView.builder(
                     scrollDirection: Axis.horizontal,
                     controller: PageController(viewportFraction: 0.8,),
                     itemCount: 5,
                     itemBuilder: (_,i){
-                  return Transform.scale(child: Container(
+                  return Transform.scale(scale: 0.95,child: Container(
                     height: 180,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             image: AssetImage("images/pic-8.png")
                         )
                     ),
-                  ),scale: 0.95,);
+                  ),);
                 },),
               )
 
